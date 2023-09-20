@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/://rynchrls.github.io/crypto-tracker/static/css/main.5676c790.css",
-    "main.js": "/://rynchrls.github.io/crypto-tracker/static/js/main.6486698c.js",
-    "index.html": "/://rynchrls.github.io/crypto-tracker/index.html",
-    "main.5676c790.css.map": "/://rynchrls.github.io/crypto-tracker/static/css/main.5676c790.css.map",
-    "main.6486698c.js.map": "/://rynchrls.github.io/crypto-tracker/static/js/main.6486698c.js.map"
+    "main.css": "/crypto-tracker/static/css/main.5676c790.css",
+    "main.js": "/crypto-tracker/static/js/main.6486698c.js",
+    "index.html": "/crypto-tracker/index.html",
+    "main.5676c790.css.map": "/crypto-tracker/static/css/main.5676c790.css.map",
+    "main.6486698c.js.map": "/crypto-tracker/static/js/main.6486698c.js.map"
   },
   "entrypoints": [
     "static/css/main.5676c790.css",
