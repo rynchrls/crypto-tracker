@@ -15,7 +15,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route index path='/' element={<Home darkMode={darkMode} handleClick={handleClick} />} />
+        <Route index path='/crypto-tracker' element={<Home darkMode={darkMode} handleClick={handleClick} />} />
         <Route path='/:id' element={<Show darkMode={darkMode} handleClick={handleClick} />} />
       </Routes>
     </BrowserRouter>
