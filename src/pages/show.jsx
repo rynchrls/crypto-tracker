@@ -95,7 +95,7 @@ function Show({ darkMode, handleClick }) {
           </div>
         </div>
         <h5 className="back">
-          <Link to="/">Back</Link>
+          <Link to="/crypto-tracker">Back</Link>
         </h5>
       </div>
     </div>

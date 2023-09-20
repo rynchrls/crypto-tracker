@@ -34,7 +34,6 @@ function Home({ darkMode, handleClick }) {
                   {data.priceBtc ? (
                     <div className="wrapper2">
                       <div className="icon">
-                        <img src="../../src/bitcoin.png" />
                         <span>{data.priceBtc}</span>
                       </div>
                       <h4>{data.priceUsd} {'USD'}</h4>
@@ -42,7 +41,6 @@ function Home({ darkMode, handleClick }) {
                   ) : (
                     <div className="wrapper2">
                     <div className="icon">
-                      <img src="../../src/bitcoin.png" />
                       <span>(BTC)</span>
                     </div>
                     <h4>USD</h4>
