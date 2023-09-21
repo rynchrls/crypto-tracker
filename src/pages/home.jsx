@@ -3,12 +3,13 @@ import HomeStore from "../components/homeStore";
 import "../App.css";
 import Header from "../components/header";
 import { Link } from "react-router-dom";
+import bitcoin from "../bitcoin.png";
 
 function Home({ darkMode, handleClick }) {
   const store = HomeStore();
 
   React.useEffect(() => {
-    if(store.trending.length === 0) store.fetchCoins();
+    if (store.trending.length === 0) store.fetchCoins();
   }, []);
 
   return (
@@ -22,7 +23,7 @@ function Home({ darkMode, handleClick }) {
             value={store.query}
             onChange={store.setQuery}
           />
-          <h1>{store.searched ? 'Search Results' : 'Trending Coins'}</h1>
+          <h1>{store.searched ? "Search Results" : "Trending Coins"}</h1>
           <div className="coin-container">
             {store.coins.map((data) => {
               return (
@@ -34,17 +35,21 @@ function Home({ darkMode, handleClick }) {
                   {data.priceBtc ? (
                     <div className="wrapper2">
                       <div className="icon">
+                        <img src={bitcoin} />
                         <span>{data.priceBtc}</span>
                       </div>
-                      <h4>{data.priceUsd} {'USD'}</h4>
+                      <h4>
+                        {data.priceUsd} {"USD"}
+                      </h4>
                     </div>
                   ) : (
                     <div className="wrapper2">
-                    <div className="icon">
-                      <span>(BTC)</span>
+                      <div className="icon">
+                        <img src={bitcoin} />
+                        <span>(BTC)</span>
+                      </div>
+                      <h4>USD</h4>
                     </div>
-                    <h4>USD</h4>
-                  </div>
                   )}
                 </Link>
               );
